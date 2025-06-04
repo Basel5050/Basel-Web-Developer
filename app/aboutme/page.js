@@ -37,8 +37,8 @@ const page = () => {
             </span>
           </h1>
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I'm <strong>Basel</strong>, a Frontend Developer with <strong>1 year of hands-on experience</strong> in building modern, responsive, and accessible web applications.
-            I've worked on <strong>8+ real-world projects</strong>, and currently work at <strong>GoWeb</strong>, where I build performant user interfaces with <strong>React</strong>, <strong>Next.js</strong>, and <strong>TailwindCSS</strong>.
+            I&apos;m <strong>Basel</strong>, a Frontend Developer with <strong>1 year of hands-on experience</strong> in building modern, responsive, and accessible web applications.
+            I&apos;ve worked on <strong>8+ real-world projects</strong>, and currently work at <strong>GoWeb</strong>, where I build performant user interfaces with <strong>React</strong>, <strong>Next.js</strong>, and <strong>TailwindCSS</strong>.
           </p>
         </div>
 
@@ -88,11 +88,6 @@ function Skill({ icon, label }) {
     </div>
   );
 }
-const BaselLogo = () => (
-  <h1 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent select-none">
-    Basel
-  </h1>
-);
-BaselLogo()
+
 
 export default page
