@@ -5,12 +5,18 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative h-screen bg-black flex items-center justify-center font-outfit overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/omarA.png')" }}
-      />
-      <div className="absolute inset-0 bg-black/60" />
+      
+      {/* الصورة الخلفية كاملة بدون قص */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/baselpic.jpeg"
+          alt="Basel Ashraf"
+          className="w-full h-full object-cover md:object-contain"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
 
+      {/* النص */}
       <div className="relative z-10 max-w-2xl px-6 flex flex-col justify-center items-center text-center">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -31,6 +37,7 @@ const HeroSection = () => {
         </motion.p>
       </div>
 
+      {/* السهم تحت */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

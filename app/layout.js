@@ -36,9 +36,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white font-outfit">
+      <body className="w-full bg-black min-h-screen">
         <Header />
-        <main className="pt-20">{children}</main>
+        <main >{children}</main>
       </body>
     </html>
   );
