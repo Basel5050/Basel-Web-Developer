@@ -1,21 +1,43 @@
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaBehance, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaBehance, FaWhatsapp, FaGithub } from 'react-icons/fa';
 
 const SocialMediaLinks = () => {
   return (
-<div className="fixed left-5 bottom-5 flex flex-col gap-4 text-white z-10">
-            <a href="https://wa.me/201061720600" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
-              <FaWhatsapp size={20} />
-            </a>
-            <a href="https://www.linkedin.com/in/basel-ashraf-a047b1208/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
-              <FaLinkedinIn size={20} />
-            </a>
-            
-            <a href="https://www.instagram.com/basel_ashraf0/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
-              <FaInstagram size={20} />
-            </a>
-          </div>
-            )
+    <div className="fixed left-5 bottom-5 flex flex-col gap-4 text-white z-10">
+      <a
+        href="https://wa.me/201061720600"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-400 transition"
+      >
+        <FaWhatsapp size={20} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/basel-ashraf-a047b1208/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-400 transition"
+      >
+        <FaLinkedinIn size={20} />
+      </a>
+      <a
+        href="https://www.instagram.com/basel_ashraf0/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-400 transition"
+      >
+        <FaInstagram size={20} />
+      </a>
+      <a
+        href="https://github.com/Basel5050"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-400 transition"
+      >
+        <FaGithub size={20} />
+      </a>
+    </div>
+  )
 }
 
 export default SocialMediaLinks

@@ -6,25 +6,54 @@ import { MdPhoneIphone } from "react-icons/md";
 
 const page = () => {
  const contacts = [
-    {
-      icon: <FaWhatsapp className="text-3xl text-green-500" />,
-      label: "WhatsApp",
-      value: "+20 106 172 0600",
-      link: "https://wa.me/201061720600",
-    },
-    {
-      icon: <FaEnvelope className="text-3xl text-red-500" />,
-      label: "Email",
-      value: "baselashraf1@gmail.com",
-      link: "mailto:baselashraf1@gmail.com",
-    },
-    {
-      icon: <MdPhoneIphone className="text-3xl text-blue-400" />,
-      label: "Phone",
-      value: "+20 106 172 0600",
-      link: "tel:+201061720600",
-    },
-  ];
+  {
+    icon: <FaWhatsapp className="text-3xl text-green-500" />,
+    label: "WhatsApp",
+    value: "+20 106 172 0600",
+    link: "https://wa.me/201061720600",
+  },
+  {
+    icon: <FaEnvelope className="text-3xl text-red-500" />,
+    label: "Email",
+    value: "baselashraf1@gmail.com",
+    link: "mailto:baselashraf1@gmail.com",
+  },
+  {
+    icon: <MdPhoneIphone className="text-3xl text-blue-400" />,
+    label: "Phone",
+    value: "+20 106 172 0600",
+    link: "tel:+201061720600",
+  },
+  {
+    icon: (
+      <svg
+        className="w-7 h-7 text-blue-500"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.29h-3v-4.5c0-1.069-.931-1.5-1.5-1.5s-1.5.431-1.5 1.5v4.5h-3v-9h3v1.089c.456-.691 1.143-1.089 2-1.089 1.75 0 3 1.37 3 3.5v5.5z" />
+      </svg>
+    ),
+    label: "LinkedIn",
+    value: "linkedin.com",
+    link: "https://www.linkedin.com/in/basel-ashraf-a047b1208/",
+  },
+  {
+    icon: (
+      <svg
+        className="w-7 h-7 text-gray-300"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M12 .5c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.111.793-.261.793-.577 0-.285-.011-1.042-.017-2.045-3.338.726-4.042-1.612-4.042-1.612-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.419-1.305.762-1.605-2.665-.304-5.467-1.332-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.304-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.486 11.486 0 0 1 3.004-.404c1.02.005 2.047.138 3.004.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.371.823 1.103.823 2.222 0 1.606-.015 2.903-.015 3.296 0 .319.19.694.8.576 4.765-1.589 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z" />
+      </svg>
+    ),
+    label: "GitHub",
+    value: "https://github.com/Basel5050",
+    link: "https://github.com/Basel5050",
+  },
+];
+
 
   return (
     <div className="min-h-screen bg-black py-32 px-6 sm:px-8 flex flex-col items-center text-white font-outfit">

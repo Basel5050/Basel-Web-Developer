@@ -33,7 +33,8 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.7 }}
           className="text-white text-sm sm:text-base md:text-lg mb-8"
         >
-          Creative Front-End Developer | Passionate About UX/UI & Performance
+Front-End Developer passionate about crafting user-friendly, responsive, and visually appealing interfaces.
+
         </motion.p>
       </div>
 

@@ -50,32 +50,49 @@ const page = () => {
       </div>
 
       {/* Section: Why Basel */}
-      <div className="max-w-4xl text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-          Why <span className="text-cyan-500">Basel?</span>
-        </h2>
-        <p className="text-md text-gray-300 leading-relaxed">
-          I combine <strong>technical expertise</strong> with a strong sense of design and user experience.
-          I care about writing <strong>clean, scalable, and maintainable code</strong> that works across devices and browsers.
-          My experience with both frontend frameworks like <strong>React & Next.js</strong>, and backend tools like <strong>Node.js</strong>, helps me build full solutions that are <strong>efficient and production-ready</strong>.
-        </p>
-      </div>
-
       {/* Section: Skills */}
-      <div className="max-w-6xl w-full">
-        <h3 className="text-2xl sm:text-3xl font-semibold text-center mb-10 text-white">
-          My <span className="text-cyan-500">Skills</span>
-        </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-300 text-center">
-          <Skill icon={<FaReact className="text-cyan-400 text-2xl mx-auto" />} label="React.js" />
-          <Skill icon={<SiNextdotjs className="text-white text-2xl mx-auto" />} label="Next.js" />
-          <Skill icon={<SiTypescript className="text-blue-400 text-2xl mx-auto" />} label="TypeScript" />
-          <Skill icon={<SiJavascript className="text-yellow-300 text-2xl mx-auto" />} label="JavaScript" />
-          <Skill icon={<SiTailwindcss className="text-cyan-500 text-2xl mx-auto" />} label="TailwindCSS" />
-          <Skill icon={<FaGitAlt className="text-red-500 text-2xl mx-auto" />} label="Git & GitHub" />
-          <Skill icon={<SiPostman className="text-orange-300 text-2xl mx-auto" />} label="Postman & APIs" />
-        </div>
-      </div>
+<div className="max-w-6xl w-full">
+  <h3 className="text-2xl sm:text-3xl font-semibold text-center mb-10 text-white">
+    My <span className="text-cyan-500">Core Skills</span>
+  </h3>
+
+  {/* Front-End */}
+  <div className="mb-10">
+    <h4 className="text-xl font-semibold mb-4 text-cyan-400">Front-End</h4>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm text-gray-300 text-center">
+      <Skill icon={<SiJavascript className="text-yellow-300 text-2xl mx-auto" />} label="JavaScript (ES6+)" />
+      <Skill icon={<FaReact className="text-cyan-400 text-2xl mx-auto" />} label="React" />
+      <Skill icon={<SiNextdotjs className="text-white text-2xl mx-auto" />} label="Next.js" />
+      <Skill icon={<SiTailwindcss className="text-cyan-500 text-2xl mx-auto" />} label="Tailwind CSS" />
+      <Skill icon={<SiTypescript className="text-blue-400 text-2xl mx-auto" />} label="TypeScript" />
+      <Skill icon={<FaCode className="text-green-300 text-2xl mx-auto" />} label="HTML5 / CSS3" />
+      <Skill icon={<FaLaptopCode className="text-pink-300 text-2xl mx-auto" />} label="Material UI" />
+    </div>
+  </div>
+
+  {/* Tools & Workflow */}
+  <div className="mb-10">
+    <h4 className="text-xl font-semibold mb-4 text-cyan-400">Tools & Workflow</h4>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm text-gray-300 text-center">
+      <Skill icon={<FaGitAlt className="text-red-500 text-2xl mx-auto" />} label="Git & GitHub" />
+      <Skill icon={<SiPostman className="text-orange-300 text-2xl mx-auto" />} label="Postman" />
+      <Skill icon={<FaLaptopCode className="text-violet-400 text-2xl mx-auto" />} label="VS Code" />
+      <Skill icon={<FaLaptopCode className="text-gray-300 text-2xl mx-auto" />} label="Chrome DevTools" />
+      <Skill icon={<FaLaptopCode className="text-blue-300 text-2xl mx-auto" />} label="Agile Workflow" />
+    </div>
+  </div>
+
+  {/* Other */}
+  <div>
+    <h4 className="text-xl font-semibold mb-4 text-cyan-400">Other</h4>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm text-gray-300 text-center">
+      <Skill icon={<SiPostman className="text-orange-300 text-2xl mx-auto" />} label="REST APIs / JSON" />
+      <Skill icon={<FaCode className="text-cyan-300 text-2xl mx-auto" />} label="Debugging" />
+      <Skill icon={<FaCode className="text-rose-400 text-2xl mx-auto" />} label="Problem Solving" />
+    </div>
+  </div>
+</div>
+
     </section>
   );
 }
