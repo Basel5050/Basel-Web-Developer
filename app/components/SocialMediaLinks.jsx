@@ -28,14 +28,7 @@ const SocialMediaLinks = () => {
       >
         <FaInstagram size={20} />
       </a>
-      <a
-        href="https://github.com/Basel5050"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-gray-400 transition"
-      >
-        <FaGithub size={20} />
-      </a>
+      
     </div>
   )
 }

@@ -14,26 +14,42 @@ const techIcons = {
 
 const projects = [
   {
-    name: 'Movie Website',
-    link: 'https://movie-show-blond.vercel.app/',
-    image: '/Capture.PNG',
-    description: 'A modern UI for browsing and watching movies online.',
+    name: 'TrendX',
+    link: 'https://trendx.co/',
+    image: '/trendx.png',
+    description: 'Saudi research platform for AI, economics, and tourism insights with a modern UX.',
     tech: ['react', 'tailwind', 'reactrouter'],
+  },
+   {
+    name: 'So3ody.com',
+    link: 'https://www.so3ody.com/',
+    image: '/so3ody.png',
+    description: 'Saudi sports hub delivering real-time football news and match coverage.',
+    tech: ['react', 'tailwind', 'redux'],
+  },
+  {
+    name: 'Alelm.net',
+    link: 'https://alelm.net/',
+    image: '/alelm.png',
+    description: 'Saudi Arabic media platform blending articles with visual storytelling.',
+    tech: ['react', 'tailwind', 'redux'],
   },
   {
     name: 'Omar Portfolio',
     link: 'https://omarabdalaziz.com/',
-    image: '/Capture03.PNG',
-    description: 'A personal portfolio for a frontend developer built with Next.js.',
+    image: '/omar-portfolio.png',
+    description: 'Next.js-powered portfolio showcasing frontend expertise.',
     tech: ['react', 'tailwind', 'next'],
   },
+  
   {
-    name: 'Jewellery Ecommerce',
-    link: 'https://my-web-two-snowy-78.vercel.app/',
-    image: '/Capture02.PNG',
-    description: 'Elegant e-commerce store for a luxury jewelry brand.',
-    tech: ['react', 'tailwind', 'redux'],
+    name: 'Movie Website',
+    link: 'https://movie-show-blond.vercel.app/',
+    image: '/movie-website.png',
+    description: 'Sleek movie streaming UI with smooth navigation and responsive design.',
+    tech: ['react', 'tailwind', 'reactrouter'],
   },
+ 
 ];
 
 const MyWorkSection = () => {
@@ -50,7 +66,7 @@ const MyWorkSection = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#111] rounded-2xl overflow-hidden shadow-lg max-w-sm w-full hover:shadow-2xl transition duration-300 cursor-pointer"
+              className="bg-[#111] rounded-2xl overflow-hidden shadow-lg max-w-sm w-full hover:shadow-2xl transition duration-300 cursor-pointer flex flex-col"
               onClick={() => setSelectedProject(project)}
             >
               <div className="relative w-full h-48">
@@ -62,12 +78,12 @@ const MyWorkSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50" />
               </div>
 
-              <div className="p-5 flex flex-col justify-between h-[220px]">
+              <div className="p-5 flex flex-col justify-between flex-grow">
                 <div>
                   <h3 className="text-white text-xl font-semibold mb-2">
                     {project.name}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                  <p className="text-gray-400 text-sm leading-relaxed min-h-[48px]">
                     {project.description}
                   </p>
                 </div>
